@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  book_app:
+    build: .
+    container_name: book_app
+    ports:
+      - "8501:8501"
+    volumes:
+      # Mount your CSV so it's readable inside the container
+      - "./books_of_the_decade.csv:/app/books_of_the_decade.csv"
+    environment:
+      - RASA_SERVER=http://rasa:5005
+    depends_on:
+      - rasa
+
+  rasa:
+    image: rasa/rasa:3.6.2-full
+    container_name: rasa_server
+    ports:
+      - "5005:5005"
+    command: >
+      run --enable-api --cors "*"
+    # Optional volumes, e.g.:
+    # volumes:
+    #   - ./rasa_files:/app
+    # environment:
+    #   - ...
+
