@@ -16,7 +16,7 @@ services:
 
   rasa:
     image: rasa/rasa:3.6.2-full
-    container_name: rasa_server
+    container_name: rasa
     ports:
       - "5005:5005"
     command: >
