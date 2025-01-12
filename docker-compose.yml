@@ -20,10 +20,11 @@ services:
     ports:
       - "5005:5005"
     command: >
-      run --enable-api --cors "*"
-    # Optional volumes, e.g.:
-    # volumes:
-    #   - ./rasa_files:/app
-    # environment:
-    #   - ...
-
+      run --enable-api --cors "*" --debug
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./config.yml:/app/config.yml
+      - ./domain.yml:/app/domain.yml
+      - ./endpoints.yml:/app/endpoints.yml
+      - ./credentials.yml:/app/credentials.yml
