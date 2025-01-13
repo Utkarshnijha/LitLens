@@ -1,19 +1,10 @@
+Utkarshni, Utkarshni, 22306093
 
-# Books of the Decade 
----------------------
-Name: -         Utkarshni
+Books of the Decade
 
-Matriculation: - 22306093
+https://mygit.th-deg.de/uu18093/LitLens.git
 
-**Project was done by me alone**
----------------------------------
-
-Title: Books of the Decade
-
-Link to MyGit Repository is: https://mygit.th-deg.de/ar08397/LitLens.git
-
-Link of MyGit Wiki is: https://mygit.th-deg.de/ar08397/LitLens/-/wikis/pages
-  
+https://mygit.th-deg.de/uu18093/LitLens/-/wikis/pages
 
 **Description:** LitLens is a data-driven web application designed to recommend and analyze books from the past decade. It combines modern technologies such as Streamlit and Rasa to provide users with an interactive chatbot, detailed book statistics, and tailored recommendations. The project aims to enhance the experience of book lovers by providing insightful data visualizations, intuitive navigation, and personalized suggestions.
 

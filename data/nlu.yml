@@ -64,6 +64,6 @@ nlu:
 
 - intent: view_statistics
   examples: |
-    - What’s the average rating for fantasy books?
+    - What's the average rating for fantasy books?
     - Show me stats for science fiction
     - Can I see book statistics?
