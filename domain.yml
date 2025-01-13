@@ -29,6 +29,19 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
+  utter_browse_books:
+  - text: "Here are some popular books: [Book 1], [Book 2], [Book 3]. Would you like more details about any of these?"
+
+  utter_recommend_books:
+  - text: "Based on your interest in [genre], I recommend '[Book Title]' by [Author]. Would you like to know more?"
+
+  utter_search_book:
+  - text: "I found '[Book Title]' by [Author]. It has an average rating of [Rating]. Would you like more details?"
+
+  utter_view_statistics:
+  - text: "The average rating for [Genre] books is [Value]. Would you like to see some examples?"
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+

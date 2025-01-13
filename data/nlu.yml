@@ -8,26 +8,11 @@ nlu:
     - hi
     - hello there
     - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
 
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
     - bye
     - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
     - see you later
 
 - intent: affirm
@@ -35,18 +20,11 @@ nlu:
     - yes
     - y
     - indeed
-    - of course
-    - that sounds good
-    - correct
 
 - intent: deny
   examples: |
     - no
-    - n
     - never
-    - I don't think so
-    - don't like that
-    - no way
     - not really
 
 - intent: mood_great
@@ -54,38 +32,38 @@ nlu:
     - perfect
     - great
     - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
 
 - intent: mood_unhappy
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
     - sad
-    - very sad
     - unhappy
     - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
 
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+
+- intent: browse_books
+  examples: |
+    - Show me some popular books
+    - What are the top books?
+    - Can I browse books?
+
+- intent: recommend_books
+  examples: |
+    - Recommend me a book
+    - Suggest a novel
+    - Can you recommend something good?
+
+- intent: search_book
+  examples: |
+    - Find 'The Great Gatsby'
+    - Search for 'Pride and Prejudice'
+    - Do you have '1984'?
+
+- intent: view_statistics
+  examples: |
+    - What’s the average rating for fantasy books?
+    - Show me stats for science fiction
+    - Can I see book statistics?
