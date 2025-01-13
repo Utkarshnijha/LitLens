@@ -17,6 +17,7 @@ services:
   rasa:
     image: rasa/rasa:3.6.2-full
     container_name: rasa
+    # user: root # Ensure proper permissions: sudo chown -R $USER:$USER models
     ports:
       - "5005:5005"
     command: >
