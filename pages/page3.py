@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 
-# Load data
-@st.cache
+# Load data with caching
+@st.cache_data
 def load_data():
     return pd.read_csv("books_of_the_decade.csv")
 

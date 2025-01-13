@@ -2,12 +2,15 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Load data
-@st.cache
+# Load data with caching
+@st.cache_data
 def load_data():
     return pd.read_csv("books_of_the_decade.csv")
 
 df = load_data()
+
+# Ensure 'Rating' is numeric
+df["Rating"] = pd.to_numeric(df["Rating"], errors="coerce")
 
 st.title("Data Visualizations")
 st.write("Explore insights from the best books of the decade.")
