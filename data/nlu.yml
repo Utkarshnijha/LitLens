@@ -1,69 +1,76 @@
 version: "3.1"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
 
-- intent: goodbye
-  examples: |
-    - bye
-    - goodbye
-    - see you later
+  - intent: goodbye
+    examples: |
+      - bye
+      - goodbye
+      - see you later
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
+  - intent: affirm
+    examples: |
+      - yes
+      - indeed
+      - of course
+      - correct
 
-- intent: deny
-  examples: |
-    - no
-    - never
-    - not really
+  - intent: deny
+    examples: |
+      - no
+      - never
+      - not really
+      - I don't think so
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
 
-- intent: mood_unhappy
-  examples: |
-    - sad
-    - unhappy
-    - not good
+  - intent: mood_unhappy
+    examples: |
+      - sad
+      - unhappy
+      - not good
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
 
-- intent: browse_books
-  examples: |
-    - Show me some popular books
-    - What are the top books?
-    - Can I browse books?
+  - intent: browse_books
+    examples: |
+      - Show me some popular books
+      - What are the top books?
+      - Can I browse books?
+      - I'd like to see popular books
 
-- intent: recommend_books
-  examples: |
-    - Recommend me a book
-    - Suggest a novel
-    - Can you recommend something good?
+  - intent: recommend_books
+    examples: |
+      - Recommend me a book
+      - Suggest a novel
+      - I need a good book recommendation
+      - Can you recommend something?
 
-- intent: search_book
-  examples: |
-    - Find 'The Great Gatsby'
-    - Search for 'Pride and Prejudice'
-    - Do you have '1984'?
+  - intent: search_book
+    examples: |
+      - Find 'The Great Gatsby'
+      - Search for 'Pride and Prejudice'
+      - Do you have '1984'?
+      - Look for 'The Invisible Man'
 
-- intent: view_statistics
-  examples: |
-    - What's the average rating for fantasy books?
-    - Show me stats for science fiction
-    - Can I see book statistics?
+  - intent: view_statistics
+    examples: |
+      - What's the average rating for fantasy books?
+      - Show me stats for science fiction
+      - Can I see book statistics?
+      - I'd like to see some statistics
