@@ -8,9 +8,14 @@ def load_data():
 
 df = load_data()
 
+# Convert Rating column to numeric (if it's not already)
+df["Rating"] = pd.to_numeric(df["Rating"], errors="coerce")
+
+# Drop rows where Rating is NaN
+df = df.dropna(subset=["Rating"])
+
 st.title("Book Search")
 st.write("Find your next favorite book based on rating!")
-
 
 # Example: Select a book name from the 'Book Name' column
 book_name = st.selectbox("Select a book:", sorted(df["Book Name"].unique()))

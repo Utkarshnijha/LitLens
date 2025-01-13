@@ -114,6 +114,9 @@ The system persona for the chatbot is documented in the Wiki, along with sample 
 ├── books_of_the_decade.csv  # CSV data with book info
 ├── pages/
 │   └── 4_Chatbot.py         # Placeholder chatbot page
+    └── page1.py  
+    └── page2.py 
+    └── page3.py   
 └── README.md                # This file
 ```
 
